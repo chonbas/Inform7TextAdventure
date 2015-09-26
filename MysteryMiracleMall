@@ -1,0 +1,505 @@
+“The Mystery of Miracle Mall” by “Basel Al Sharaf, Alexei Bastidas, Karina Samuel-Gama, and Robert Young”
+
+The story genre is "Murder mystery". The release number is 1. The story headline is "A tale of crime, love, and mystery.". The story creation year is 2015.
+
+
+Part 0 - General Rules
+
+Talking to is an action applying to one visible thing.
+Understand "talk to [someone]" or “converse with [someone]” as talking to.
+Check talking to: say "[The noun] doesn't reply. No one wants to talk to a killer!".
+Instead of talking to the player, say “Don’t go crazy, now.”
+
+A thing can be discovered or secret. A thing is usually discovered. 
+Understand "consult" or "look up" or "search for"  or "look for "  or “give” as "[search term]".
+
+After taking something, say "Your thievery knows no bounds."
+
+Understand "help" as helping. Helping is an action applying to nothing.
+
+Report helping:
+    say "The following commands are usable during the game:
+    
+    -go (direction) : This allows for movement between the rooms of the mall. You probably want to try different directions in each room to make sure you don't miss anything, including up, down, southwest, northeast, etc. You can also just write 'n' or 'se' to go in these directions, even without 'go'. 
+    
+    -examine (any object) : Examining is a core component of understanding your world. Examine everything! 
+    
+    -pour (liquid) into (container) : Well, maybe you need to pour something!
+    
+    -search for (text) : You can search through lots of things, like books or shelves, to find what you’re looking for. Some things don’t require that you look for something specific, so you can just say ‘search’.
+    
+    -take (object) : If the object is takeable, you’ll put it in your inventory.
+    
+    -put (object) : If you’re carrying the object, you’ll put it down.
+    
+    -inventory : It’s important to know what you’ve got in your pockets.
+    
+    -put on / take off (clothing) : You can alter your wardrobe with whatever you hold.
+    
+    -push / smash / punch (object) : Violence isn’t usually the answer!
+    
+    -mold (object) : You can make copies of certain things by molding them with other objects you’re carrying.
+    
+    Good luck.".
+
+Section - Item Rules
+
+A junk item is a kind of thing. 
+bloody clothing is a junk item. Description of bloody clothing is "A formerly fine set of clothes, torn up by what appears to be a sharp object. There is blood splattered all over the clothing. Someone was trying to get rid of this."
+
+Lord of the Necklaces Book One is a thing. Lord of the Necklaces Book One is secret. Understand "two tunnels" as Lord of the Necklaces Book One. Description of Lord of the Necklaces Book One is "You notice familiar handwriting on the last page. : ’I'm afraid to go back to the Marketplace. I know he will be waiting there. Last time he told me he loved me. When I refused his advances he said 'If I can't have you, no one can.' I'm afraid to find out what that means.’";
+
+Section - The Player
+
+The description of the player is "Your hands have grown grimy over your time here in the Mall. You wear old jeans and a light gray jacket, both of which have a few rips. You imagine you probably don't smell too good, although none of the Dragons do."
+
+Part 1 - Map
+
+Section - Entrance
+
+The Entrance is a room. The description of the Entrance is “The room is covered in old peeling advertisements. There is a large boarded door at one end.”. Advertisements are scenery in the Entrance. The description of Advertisements is "You wonder what exactly is a Big Mac." The boarded door is scenery in the Entrance. 
+Instead of examining boarded door for the first time, say "You remember these doors. You walked through them for the very first time not too long ago. It comes back to you, the thirst and hunger you endured as you wandered across the badlands. Searching endlessly for a place to call home. It was only after you see the distant flickering light that a desperate hope flooded your heart. A soft breeze from the air vents above you brushes against the top of your head and you come back to your senses.".The description of boarded door is "The big boarded door is daunting. It seems like such a flimsy barrier between you and the badlands. You refuse to go any further."
+Understand "door" as boarded door.
+
+Section - Marketplace
+
+South of the Entrance is a room called the Marketplace. The description of the Marketplace is “This is a gathering place, where dragons come to barter and unicorns come to take. You look at the tables filled with various useful items, but you have nothing to offer. Stores surround you on every side. The fountain sits directly in the center. You can see its cracked cement from anywhere in the mall. You think maybe once it might have been pretty. [paragraph break]Southwest is a shoestore. Southeast is a bookstore. Northwest is a perfume store. Northeast is a jewelry store. North is the Mall Entrance. Two hallways lead east and west.”. 
+
+The tables are scenery in the Marketplace. The items are a part of the tables. The fountain is scenery in the marketplace. 
+Understand "item" as items.
+Understand "table" as tables.
+The description of the tables is "Old wooden tables, barely holding themselves together."
+The old lady is a person in the marketplace. The description of the old lady is "Her hawk eyes miss nothing."
+The description of the items is "There is so much you feel overwhelmed. Your palm twitches, but the old lady glowers at you and you back away." .
+The description of the fountain is " The old stone fountain towers over you. Reminding you that time is running out."
+ 
+Section - Judge Thorner
+
+In the Marketplace is a man called Judge Thorner. The description of Judge Thorner is "Judge Thorner's unquestionable power over life and death is intimidating, and his stern look sends shivers down your spine. Perhaps you could ask him about how to prove your innocence."
+
+Instead of talking to Judge Thorner:
+    say "The Judge doesn't seem like the type for chit chat. You should probably ask him something specific or move along.".
+    
+After asking Judge Thorner about "innocence", say "The Judge's gaze meets yours, and you cower in his icy glare. He answers you, 'The only way to prove your innocence is to give me three pieces of evidence against whomever you accuse of the murder. Time is running out before your exile.' A slight smirk grows at the corner of his mouth."
+
+After asking Judge Thorner about "exile", say "The Judge laughs mightily. 'You don't want to know about that... suffice it to say that you won't last long.'"
+
+After asking Judge Thorner about "evidence", say "The Judge looks down at you, his eyes questioning. 'Do you have three pieces of evidence against an accused member of the community?'"
+
+After answering Judge Thorner that "yes", say "'What evidence do you bring? Give me your three pieces of evidence and we will consider it.'"
+
+After answering Judge Thorner that "no", say "'Well then, you shall be exiled soon enough.'"
+
+Instead of giving or showing something to Judge Thorner:
+    if noun is the knife:
+        say "Judge Thorner quickly glances between the knife and your face, looking slightly concerned. 'You say you found this in the Green House? Interesting...'";
+        Now Judge Thorner carries the knife;
+    if the noun is the Lord of the Necklaces Book One:
+         say "Judge Thorner flips to the page you point out and reads it quickly. 'This is quite concerning indeed. Perhaps your story has a bit of credence.'";
+        Now Judge Thorner carries the Lord of the Necklaces book one;
+    if the noun is bloody clothing:
+        say "Judge Thorner looks at you, bewildered. 'How could a member of our community do this!?'";
+        Now Judge Thorner carries the bloody clothing;
+    if Judge Thorner carries three things:
+        say "Judge Thorner bellows to the mall, 'There is a murderer among us!' You stand next to him, worrying that your exile is soon at hand. 
+        
+        Dragons and Unicorns gather in the Marketplace, climbing on the fountain. They are prepared to carry you to the Entrance and throw you back into the badlands, you are sure of it. You turn to Judge Thorner, awaiting his response.
+        
+        Judge Thorner bellows, 'The Unicorn working at the Jewelry Store who lives in the Green House, step forward.
+        
+        'It was him! Exile him!'
+        
+        The crowd carries the angry unicorn away and throw him out of the Entrance. You are given full membership in the community, and exonerated from the crime. Huzzah!";
+        End the story finally.
+
+Section - Escalator
+
+The Escalator is above the Marketplace. "A solitary escalator connects the world of the Dragons to the world of the Unicorns." Above the Escalator is the Balcony. The Escalator is a door. The description of an escalator is “Rusty steps move in perpetual motion."
+Instead of examining escalator for the first time, say "You’ve heard tell of the life of luxury of Unicorn. Rumor has it that each person has a whole corner of a store to sleep in. Although everyone unquestionably accepts their role as a Dragon or a Unicorn now, you’ve heard whispers about a different time.".
+Instead of examining escalator for the second time, say "When the original stragglers first found this mall, they all holed up in what is now the residential area. A group of found the boiler room and were able to coax the roaring fires to life. With the warmth of the fires giving them the strength to push forward, another group attempted to explore the upper levels. ".
+Instead of examining escalator for the third time, say "What happened up there no one knows; a much smaller group came back muttering about a giant beast with a huge horn. All that could be deciphered was that the upper level was free of danger. As a reward for their valour the smaller group was given the upper level to reside and the larger group stayed below to tend the fires. In jest each group named themselves Unicorns and the other Dragons. No one jokes about it now.".
+
+Section - Clothing Store
+
+West of the Marketplace is a room called Mall West. The description of the Mall West is “The long hallway leads to the old Food Court in the west. To the north is the Clothing Store, and to the south is the nasty Boiler Room”.
+
+North of Mall West is a room called the Clothing Store. The description of the Clothing Store is “The room is filled with evidence of hard work. Fabrics are being torn apart and reformed to make more useful things. Nothing of much interest here. You notice a back room tucked away in the northern wall.“.
+   Fabrics are scenery in the Clothing Store. The description of Fabrics is "There are all sorts of patterns.".
+   Understand "fabric" as fabrics.
+   The cloth is in the Clothing Store. "A frayed piece of cloth lies forgotten in the corner." The description of the cloth is "A square piece of coarse blue material."
+
+
+North of the Clothing Store is a room called the Back Room. The description of the Back Room is "This room has a more luxurious vibe than the rest of the store. You see the gleam of a shimmering chandelier above you. There a lot of expensive looking items on display, but a glass case at the center of the room catches your eye." The expensive items are scenery in the Back Room. The chandelier is scenery in the Back Room. The description of the chandelier is "It reflects light so brilliantly it hurts your eyes."
+
+The Glass Case is inside the Back Room. "A large display case at the center of the room catches your eye". The Glass Case is a transparent openable container. It is fixed in place. The Glass Case is closed. The glass case contains a Scarlet Tunic. The description of the Glass Case is "You get closer to take a better look at the case. You see a ruby-encrusted scarlet tunic inside." 
+After taking Scarlet Tunic:
+now the description of the Glass Case is "The large case stands empty now.";
+say “Your thievery knows no bounds.”.
+
+The Scarlet Tunic is wearable.
+
+Before going through the escalator from the Marketplace:
+    If the player does not carry the Vial of Rose-Scented Perfume or the player does not wear the Scarlet Tunic:
+        say "You don't want to go up there, the unicorns will probably just throw you down from the balcony. If you want to go, you'll need to do something about your terrible smell and repulsive attire.";
+         stop the action.
+
+
+Section - Perfume and Jewelry Store
+
+Northwest of the Marketplace is a room called the Perfume Store. The Perfume Store is west of the Entrance. The description of the Perfume Store is “You don’t come in here often. Only a select few are allowed to work directly with the scents and oils of the Unicorns. The room smells of places you can't even begin to imagine: the ocean, a sunlit garden, a better life.”
+
+The Cabinet is inside the Perfume Store. “You spot an extravagantly decorated cabinet hanging on the wall.” The Cabinet is a transparent openable container. The Cabinet is open. It is fixed in place. The description of the cabinet is “It is filled with bottles and vials of all shapes and sizes.”The Vial of Rose-Scented Perfume is contained by the Cabinet. Instead of examining Cabinet for the first time, say "One brightly colored vial catches your eye". The description of the vial is “You spray a little in the air and give it a sniff. It smells very expensive. You already feel like a Unicorn.”
+
+Northeast of the Marketplace is a room called the Jewelry Store. East of the Entrance is the Jewelry Store. The description of the Jewelry Store is “You’ve only seen people in here once, on the day of your arrival. The strangers were covered head to toe in rags and they reeked of the badlands. They displayed their odds and ends in the glass cases. The people of the mall streamed in and out buying wares for their nefarious purposes. The room stands empty now. Clean with no trace of the outside world.” Glass cases are scenery in the Jewelry Store.The description of the Glass Cases is “The grimy cases are empty.” Understand “glass cases” as Glass Cases. Understand “cases” as Glass Cases. 
+Framed picture is a thing in the Jewelry Store. Description of framed picture is “A decent quality sketch. The picture shows a strong-looking man, holding some jewels, in front of a green door.” Understand “picture” as Framed picture. 
+
+Section - Bookstore
+
+Southeast of the Marketplace is a room called the Bookstore. The description of the Bookstore is “The bookstore holds the only remnants of the old world - a small collection of texts from before the Fall.” Bookshelves are scenery in the bookstore. Description of bookshelves is "Plenty of sturdy shelves, display the written tales of a forgotten time."
+
+The massive bookshelf is a thing in the bookstore.  The description of the massive bookshelf is "This shelf holds all of the collective knowledge of the former world. You can search for specific texts here. Sometimes there are interesting stories hidden in the endless rows". Understand "books" as massive bookshelf.
+
+Instead of taking the massive bookshelf:
+    say "The shelf is far too heavy for you to take."
+
+instead of searching the massive bookshelf:
+    say "Try searching for a specific book or keyphrase."
+
+Understand "examine [text]" as examining as a book when the player is in the Bookstore. Understand "look up [text]" as examining as a book when the player is in the Bookstore. Understand "search for [text]" as examining as a book when the player is in the Bookstore.
+
+    Examining as a book is an action applying to topics.
+
+    Carry out examining as a book:
+        say "You can't find any such text."
+
+    Instead of examining as a book a topic listed in the Table of Book Titles:
+        say "[title entry][paragraph break][description entry][paragraph break]";   
+    
+    
+    After reading a command:
+        if the  player's command includes "[search term]" and Lord of the Necklaces Book One is off-stage
+        begin;
+            if the player's command includes "Lord of the Necklaces" or player's command includes "two tunnels" or player's command includes "tunnels"
+            begin;
+                now Lord of the Necklaces Book One is in bookstore;
+            end if;
+        end if.
+
+
+Table of Book Titles
+topic   title   description 
+"tunnel"    "To Dig or Not to Dig? A Field Guide on Tunneling"  "This might come in handy if you ever need to dig a hole."
+"two tunnels" or "Lord of the Necklaces" or "tunnels"   "Lord of the Necklaces: The Two Tunnels Book One"   "You notice familiar handwriting on the last page. : 'I'm afraid to go back to the Marketplace. I know he will be waiting there. Last time he told me he loved me. When I refused his advances he said 'If I can't have you, no one can.' I'm afraid to find out what that means.’"
+"bible"     "King James Bible"  "A holy text of the old world"
+"manual"    "Manual Labor Do's and Don'ts"  "This could come in useful if I end up exiled"
+"killer"    "Goosebumps: A Killer Clown!"   "Whats a clown?"
+"diary" "Anne Frank's Diary"    "I guess life has never been pleasant."
+"claire"    "The secret to love, by claire" "A handwritten manuscript by the late Daphne. It seems she was madly in love and wanted to document it for all to see."
+"writing"   "MLA Handbook to Academic Writing"  "Not sure why anyone would use this."
+
+    
+After taking Lord of the Necklaces Book One:
+    say "Look like you've got a piece of potential evidence."
+
+The cash register is a thing in the Bookstore. The description of the cash register is “A beat-up cash register”.
+
+Section - Shoe Store
+
+Southwest of the Marketplace is a room called the Shoe Store. The description of the Shoe Store is “Your eyes grow big in wonder, so many beautiful things. The intricate bows and brooches all made from shoelace. You’ve never seen so much shoelace in one place. Your hand itches to grab one, but such an item is probably worth more than your life.”
+
+Bows are scenery in the shoe store. The description is "You did not realize shoelace could make such fantastic craft goods."
+
+Brooches are scenery in the shoe store. The description is "You are beyond amazed at the cobbler's skill."
+
+Shelves are scenery in the shoe store. The description is "The bows and brooches are carefully placed in shelves for customers to see.".
+ 
+Shoelace is scenery in the shoe store. The description is “Everything is made from shoelace, how extravagant!”.
+
+ Inside the shoe store is a counter. It is fixed in place. The description of the counter is "There is a cashier behind a desk, and a mother and her child about to pay.". 
+ 
+The cashier is a person in the shoe store.  Description of the cashier is "The cautiously eyes each customer, making sure no one tries to steal his goods. ".
+The mother is a person in the shoe store. Description of the mother is  “The woman is not paying attention to her son. She is clearly more concerned with her beautiful new brooch.” 
+The kid is a person in the shoe store. 
+    
+The shoestore office door is south of the shoe store and north of the shoestore office. The shoestore office door is a locked door. Understand "door" as shoestore office door. Understand "office door" as shoestore office door. The office key unlocks shoestore office door. The office key is in the shoe store. The description of the office key is "A plain looking key is sitting on top of the desk, within reach of the cashier.".
+
+instead of examining kid:
+    if kid is in shoe store :
+        say “The child is fidgeting with his hands. As you look closer you see he is trying to put a ribbon into his pocket. Noticing your stare as the child commits a crime, the cashier catches on as well. The cashier screams loudly and start chasing the kid out of the store. In his fury, the key on his wrist seems to have fallen to the floor. The mother follows them both.”;
+        move the cashier to the marketplace;
+        move the mother to the marketplace;
+        move the kid to the marketplace;
+        now the description of the mother is "The woman is trying to calm the cashier from chasing her kid.";
+        now the description of the cashier is "The man is chasing the young boy around, who knew he had such stamina?";
+        now the description of the office key is "A plain key unlocking the back-office of the shoestore.";
+    otherwise:
+        say "The kid is running around wildly, trying to avoid getting caught by the shoestore cashier."    
+    
+Instead of taking office key:
+    if cashier is in shoe store :
+        say "As you approach the counter to grab the key you notice the cashier staring you down and choose not to proceed.";
+    otherwise:
+        say "With the cashier gone, you grab the key.";
+        move the office key to the player.
+
+In Shoestore Office is shoe manager desk. Description is "A rundown office that doubles as a workshop. You see a desk and a shoemaking station.". The desk is an openable container. The desk is closed. The desk is fixed in place. Shoemaking station is scenery in the shoestore office. Description of shoemaking station is "An assortment of tools to craft fine jewelry from shoelace." Shoemaking station is fixed in place.
+
+The shoestore ledger is a thing in the desk.  The description of the ledger is "A ledger of recent custom orders.".
+
+instead of taking desk:
+    say "It is far too heavy for you to take.".
+    
+instead of taking ledger:
+    say "It would probably be a smarter idea to leave the ledger here, less you get yourself in further trouble by stealing".
+
+instead of searching ledger, say "You should probably look for a specific entry in the ledger. There are years of receipts in here.".
+
+Understand "examine [text]" as examining as a ledgerEntry when the player is in the Shoestore office. Understand "look up [text]" as examining as a ledgerEntry when the player is in the Shoestore office. Understand "search ledger for [text]" as examining as a ledgerEntry when the player is in the Shoestore office. Understand “search for [text]” as examining as a ledgerEntry when the player is in the Shoestore office.
+
+    Examining as a ledgerEntry is an action applying to one topic.
+
+    Carry out examining as a ledgerEntry:
+        say "You can't find any such ledger entry."
+
+    Instead of examining as a ledgerEntry a topic listed in the Table of Ledger Entries:
+        say "You find the following entry. [paragraph break]Title: [title entry][paragraph break]Description: [description entry][paragraph break] Customer: [customer entry] [paragraph break]"
+
+Table of Ledger Entries
+topic   title   description customer
+"ribbon" or "shoelace ribbon"   "Shoelace ribbon"   "Handcrafted ribbon made from wool shoelace"    "Jewelry Store Owner"
+"bow"   "Glass encrusted bow-tie"   "A delightful bow tie for Mr. Wiggles. Master Unicorn's favorite pup."  "Master Unicorn"
+"bracelet"  "Twine bracelet"    "A wonderful, colorful, bracelet for a young lady." "Strottingham"
+"brooch"    "Good-fortune brooch"   "A brooch for the lovely Mrs. Robbins. Maybe I will be blessed and she won't bring her pesky kid in here."  "Mrs. Robbins"
+"shoelace"  "Note to self:" "Running low on shoelace, need to head to Waste Processing and gather more of the clothing the Unicorns throw away."    ""
+
+
+Section - Boiler Room
+
+South of the Mall West is a room called Boiler Room. The description of the Boiler Room is “The underbelly of the mall. Rumor has it, the dragons got their name because of their ability to work with these giant bellows to produce heat and power for the rest of the mall. Of course being a dragon doesn’t mean anything dignified anymore. There's an old metal pot sitting on the floor, and a line of boilers along one wall.” Inside the Boiler Room is a pot. The pot is a container. The description of the pot is "The pot looks worn but strong, strengthened by the heat of the room. Nothing could melt it, but perhaps things could be melted inside. A long handle protects the user." Inside the Boiler Room is a thing called a boiler. The boiler is fixed in place. The description of the boiler is "Hot coals inside send steam billowing through the mall. It's too hot to touch!" The boiler is an openable container. The boiler is closed.
+
+melted metal is a thing. "Its silky smooth texture is enticing... DON'T TOUCH IT!"
+
+Before inserting something into the boiler when the boiler is open:
+    if the noun is the metal bar, say "It will melt if you put it right in the boiler! Better put it in a container first.";
+    if the noun is the pot and the metal bar is in the pot:
+        now the metal bar is nowhere;
+        now the melted metal is in the pot;
+        say "The metal bar melts with a satisfying hiss, filling the pot.”
+Before inserting something into the pot:
+    if the noun is the metal bar and the pot is in the boiler:
+        now the metal bar is nowhere;
+        now the melted metal is in the pot;
+        say "The metal bar melts with a satisfying hiss, filling the pot".
+
+A homemade key is a thing. "It's a molded key to the blue house! A little oddly shaped, but it should work." The homemade key unlocks the blue door. 
+
+Understand "pour [something] in/into/on/onto [something]" as pouring it into. Understand "empty [something] into [something]" as pouring it into. Understand "fill [something] with/from [something]" as pouring it into (with nouns reversed).
+
+Pouring it into is an action applying to two things.
+
+Check pouring it into:
+    if the noun is not the melted metal, say "You can't pour that." instead;
+    if the second noun is not the mold, say "You can't pour liquids into that." instead;
+    if the noun is the second noun, say "You can hardly pour [the noun] into itself." instead.
+
+Carry out pouring it into:
+    now the mold is nowhere;
+    now the melted metal is nowhere;
+    now the player carries the homemade key.
+    
+Report pouring it into:
+    say "The molten metal slowly cools in the mold until it is hard and stiff. You made a key!".
+
+East of the Marketplace is a room called Mall East. The description of the Mall East is “A long hallway leading to the Residential Area. To the south you see a home supply store. To the north is a garden supply.”.
+
+Section - Home and Garden Supply
+
+South of the Mall East is a room called Home Supply. The description of the Home Supply is “You can hear the clang of hammers all around you. Dragons hard at work breathing life into the mall that is in a state of constant disrepair. You wonder if you have any raw materials that you need to purchase.” Inside the Home Supply is putty. The description of putty is "You squeeze the soft, moldable stuff in your fist. Might be useful, perhaps you could mold things with it." Inside the Home Supply is a metal bar. The description of the metal bar is "Hard and shiny, looks useful for making things. Perhaps you could melt it somehow."
+
+North of the Mall East is a room called Garden Supply. The description of the Garden Supply is “The room is filled with poultices and all sorts of homebrews. It fills you with a quiet sense of dread, you’ve seen people enter and never come out. You’re afraid to touch the substances. The last time you tried, your hand turned a nasty shade of green for hours.” 
+   Poultice is in the Garden Supply. The description of poultice is "A squishy substance with an awful odor." 
+   Homebrew is scenery in the Garden Supply. The description of homebrew is "You wonder what each concoction does."
+   The herbologist is a man inside the Garden Supply. The description of the herbologist is "He stands behind the counter with a slightly evil glint in his eye. He's fingering a keychain with a blue key." The herbologist carries a blue key. The description of the blue key is “Perhaps the key could be useful, if only you could distract the herbologist long enough to copy it somehow.” Inside the Garden Supply is the stack of pots. Instead of taking the pots, say “The pile is far too big to take with you.” The description of the stack of pots is “The clay pots are perched precariously on top of each other, stretching four feet high.”
+
+
+Instead of attacking or pushing the stack of pots:
+    Say "The pots crash in a pile of clay rubble. The herbologist yells 'What do you think you're doing, scum?' He sets down his key before jumping over the counter toward the pots. 'Damn Dragons these days,' he continues. 'Can't teach 'em anything.'";
+    Now the blue key is in the Garden Supply;
+    Now the stack of pots are nowhere;
+    Now the description of the herbologist is "He's still cleaning up that mess you made.".
+
+Mold is a thing. "A mold of a key, ready for production of a brand new key!"
+
+Understand "mold [something]" as molding it. Molding it is an action applying to one thing. Check molding it: if the noun is not a key, say "Why would you mold that?"; if the noun is the office key, say “You already have the key, there’s no need to make a mold of it.”; if the player does not carry putty, say "You have nothing to mold with" instead. After molding: say "You have a mold of [noun]!"; now the player carries mold; now the putty is in Home Supply; if the player carries metal, say "Now all you need is some heat and you can make a new one...".
+
+Instead of taking the blue key, say "You don't want to make the herbologist any angrier! Maybe you could quickly make a copy though."
+
+West of the Mall West is a room called the Food Court. The description of the Food Court is “The food court bustles with activity. Every available space is used for processing. There is a Food Screening Area to the north and the Waste Processing Facilities to the South”
+
+North of the Food Court is a room called Food Screening Area. The description of the Food Screening Area is “All the wooden tables are stacked with food. Some of the food is traded in, but most comes from the farms directly outside the mall. It must be inspected before eating, not everything that grows in the badlands is safe for consumption.” Apple is scenery in the Food Screening Area. The description of apple is "You wonder if a bite of this will mean death." Wooden tables are scenery in the Food Screening Area. The description of wooden tables is "You can barely see the wooden table under the massive piles of food." Understand "wooden table" as Wooden tables. Understand "food" as Apple.
+
+Section - Waste Processing Facilities
+
+South of the Food Court is a room called Waste Processing Facilities. The description of the Waste Processing Facilities is “ The smell here is hard to bear. You pity the dragons that work from morning till night separating the mall’s waste. Separating the recyclable from the unsalvageable.”
+
+trash piles is a thing in the Waste Processing Facilities. Description of trash piles is "Heaping piles of waste produced all across the lower Dragon level, as well as the trash brought down from the Unicorns above." Understand "trash pile" as Trash Piles.
+Instead of taking trash piles:
+    say "You stick some trash in your pockets. Your smell, oddly enough, remains the same."
+
+An old shoe is a junk item. Description of an old shoe is "A crusty old shoe with plenty of character, but little sole.".
+A wooden spoon is a junk item. Description of wooden spoon is "A broken spoon covered in grime.".
+A dirty sock is a junk item. Description of dirty sock is "A crusty old sock.".
+A moldy bread is a junk item. Moldy bread is edible. Description of moldy bread is "It looks as if maggots have eaten most of it.".
+A pile of maggots is a junk item. A pile of maggots is edible. Description of a pile of maggots is "A bunch of squirmy creatures.".
+A fancy shoe is a junk item. Description of a fancy shoe is "An old canvas shoe, with a shiny white rubber sole. A logo reading 'Converse' is proudly stamped on it. You wish it was your size. It is just so fancy.".
+A pillow is a junk item. Description of a pillow is "A bundle of cardboard covered in cloth.".
+
+Instead of searching trash piles:
+    let T be a random junk item;
+    if the number of junk items that are off-stage is zero:
+        say "It looks like you've taken the whole pile!";
+        now the trash piles is nowhere;
+    if T is off-stage:
+        now T is in the waste processing facilities;
+        say "You found ";
+        say T;
+        say "[line break][line break]";
+        say description of T;
+        say “[line break]”;
+    otherwise:
+        try searching trash piles.
+        
+after taking bloody clothing:
+    say "This more than likely belonged to the killer. Only a unicorn would wear clothes this fancy."
+
+Section - Residential Area
+
+East of Mall East is a room called Residential Area. The description of the Residential Area is “The room was vast filled with aisles upon aisles. This is your favorite place. The aisles don’t offer much room, but at least there was a roof over your head and four walls between you and the treacherous badlands. Your aisle is to the east.”
+
+Aisles are scenery in the Residential Area. Description of aisles is "Multiple aisles have been refitted for housing. The aisle you were living in is to the east.".
+
+East of the Residential Area is a room called Your Aisle. The description of Your Aisle is “The residential area is set up with a series of sheets separating individual rooms along each aisle of the old department store. Yours is as ordinary as any. The aisle continues to the south, and the rest of the residential area is to the west.”. Instead of going east in Your Aisle, say “That way is blocked by tall, long, immovable, empty shelves”.
+
+South of Your Aisle is a room called Neighbor's Room. Instead of going west in Neighbor's Room, try going east. Instead of going east in Neighbor's Room, say “That way is blocked by tall, long, immovable, empty shelves”. The neighbor is scenery in the Neighbor's Room.
+
+
+South of Neighbor's Room is a room called Your Room. The description of Your Room is “Your room is sparse. Aside from the mat on the floor, it seems to be lacking any personal effects. You haven't been here long enough to amass any personal belongings. Your neighbors[‘] rooms stretch to the north and south.”. The mat is scenery in Your Room. The description of the mat is "A thin rectangular piece of threadbare material".  The piece of paper is a thing in Your Room. The description of the paper is “It reads, ‘If you ever need help, just say so.’ You’ve seen it many times, but never understood it.”
+
+Instead of going south in Your Room, say “You learned your lesson last time. The angry lady who lives there nearly took off your head for trespassing on her ‘property’.”. Instead of going west in Your Room, try going east. Instead of going east in Your Room, say “That way is blocked by tall, long, immovable, empty shelves”.
+
+
+The Shoelace Ribbon is in the Neighbor's Room. "A shoelace ribbon lies discarded on the floor.".The description of the Shoelace Ribbon is “As you reach to grab the ribbon, you notice its fine craftsmanship. You wonder if the old cobbler specializes in crafting these.”
+
+
+The tattered book is in the Neighbor's Room. "In the shadowy depths of the shelves, you see a tattered book.".The description of the tattered book is “You painstakingly decipher the writing on the cover ‘Lord of the Necklaces: The Two Tunnels Book Two’ you attempt to read the rest of the book but the small writing discourages you.”. Writing is a part of tattered book. The description of writing is "You can only make out the first couple words 
+‘...no matter how many times I tell him that my heart belongs to another he won't leave me alone’ 
+You wonder what she meant. You check the other pages before the writing and find no previous entries."
+Before taking the tattered book: 
+    say “Some of the pages have been torn. You can see barely legible writing scrawled on the margins of the pages.”
+
+
+
+Instead of looking for the first time, do nothing:
+
+Section - Second Floor
+
+The Balcony is a room. The description of the Balcony is “From here you have an unobstructed view of the lower level. Hundreds of people stream to and fro, going about their daily business without a thought to those who live above. Being so removed from the bustle of activity below gives you a sense of serenity and power.”.
+
+North of the Balcony is a room called the Plaza. The description of the Plaza is “Looking at the room, you get goosebumps.".Chairs is in the Plaza. "Chairs covered in incredibly soft material are placed in shafts of delicate sunlight. You wonder if you would melt into them if you tried to touch them.”. Chairs is a supporter. Chairs is enterable. The description of Chairs is "You touch the fabric. Although unbelievably soft, you do not in fact melt." Understand "chair" as Chairs. Understand "chairs" as Chairs. A plant is in the Plaza. "Impossibly green plants hang from the ceiling.".  The description of the plant is "It is so rare to see such vibrant green. It is hard to believe the world was once covered in these." Understand "plants" as plant. 
+
+South of the Balcony is a room called the Arcade. The description of the Arcade is “You can barely make out the hazy figures in the dimly lit room. You squint to get a better look, but quickly shift your gaze away. You blush, so that’s what it looks like. Instead, you turn your attention to the screens of flashing colors at the other end of the room. You hear shouts of joy and despair coming from the people standing by the screens. You wonder at their use.”.
+Inside the arcade is the screen. It is fixed in place. The description of the screen is "You press a few buttons and words flash on the screen.
+
+  'YOU LOSE'".
+
+
+Section  - Unicorn Housing
+
+The Green House is a room. The description of the Green House is “Yup, it’s green. Something seems a little creepy here.”. The green door is west of the Balcony and east of the Green House. The green door is a door. It is lockable and locked. Inside the Green House is a knife. The description of the knife is “It’s covered in blood… you think you might know who the blood belongs to.”
+
+after taking the knife:
+    say “Looks like you found a murder weapon.”
+
+The Red House is a room. The description of the Red House is “Just another unicorn’s house.” The red door is northwest of the Balcony and southeast of the Red House. The red door is a door. It is lockable and locked.
+
+The Blue House is a room.  The description of the Blue House is “The inside of the house has the same ridiculous color scheme of the outside, classic unicorn extravagance. Teal, aqua, navy, sky, and baby blues color every surface. Several air ducts dot the ceiling.”. The blue door is southwest of the Balcony and northeast of the Blue House. The blue door is a door. It is lockable and locked. 
+
+The blue air duct is above the Blue House. The blue air duct is a door. The description of the blue air duct is “The screws look a little loose, perhaps you could get inside.”
+
+Instead of entering the blue air duct, move the player to the Green House.
+
+The green air duct is above the Green House. The green air duct is a door. The description of the green air duct is "Well, you knocked the whole thing down. You can definitely get back in."
+
+Instead of entering the green air duct, move the player to the Blue House.
+
+The Purple House is a room.  The description of the Purple House is “Just another unicorn’s house”. The purple door is southeast of the Balcony and northwest of the Purple house. The purple door is a door. It is lockable and locked.
+
+The Yellow House is a room.  The description of the Yellow House is “Just another unicorn’s house”. The yellow door is east of the Balcony and west of the Yellow House. The yellow door is a door. It is lockable and locked.
+
+The Orange House is a room.  The description of the Orange House is “Just another unicorn’s house”. The orange door is northeast of the Balcony and southwest of the Orange House. The orange door is a door. It is lockable and locked.
+
+Part 2 - Plot Scenes
+
+Section - Accusation
+
+Accusation is a scene. Accusation begins when play begins. 
+    
+When Accusation begins: 
+    now the player is in Your Room;
+    now the shoelace ribbon is nowhere;
+    now the tattered book is nowhere;
+    now the description of the Neighbor's Room is "Unlike your stretch of aisle, this ‘home’ seems to be more personalized. On the far side of the room, next to the other sheet, you think you see your neighbor lying on the ground.";
+    say “*THUMP* A loud noise wakes you up. You are instantly tense and on guard. As you recognize your surroundings you start to relax. How long has it been since you’ve been here? Several days...a week? You chuckle to yourself, you’ve got to start getting used to being around people again. You’re safe now. *THUMP* you hear the noise again. It seems to be coming from the north on the other side of the sheet that separates you from...what’s her name? Edith...Belle?”.
+
+Instead of examining the neighbor in the Neighbor's Room:
+    say “Although hair covers her face, you can clearly tell something is wrong. She doesn’t seem to be breathing. This is wrong. People aren’t supposed to die here. This is what you’ve been running from. As the curtain to the north is pulled back, you remember. Her name is Claire.”.
+
+Instead of talking to neighbor in the Neighbor's Room:
+    say "She can't breathe, much less talk.".
+    
+Accusation ends when examining the neighbor in the Neighbor's Room.
+
+Instead of going north in the Neighbor's Room during Accusation, say "Your neighbor’s still form seems to be blocking the exit".
+
+When Accusation ends:
+    now the neighbor is nowhere.
+
+Section - Trial
+
+Trial is a scene. Trial begins when Accusation ends.
+
+Every turn during Trial:
+    repeat through Table of Trial Events:
+        say "[event entry][paragraph break]";
+        blank out the whole row;
+        rule succeeds.
+
+Table of Trial Events
+event
+"People begin to flood into the room. You hear shouts of 'Murder'"
+"Rough hands take hold of you and drag you towards the fountain."
+"You stand at the base of the fountain. A crowd starts to gather around you."
+"You look resignedly at the man standing in front of you. Judge Thorner. His word is law.
+
+'You stand accused for the murder of Claire Strottingham. According to our customs, you have one day to prove your innocence. Failure to do so will result in immediate and permanent exile. There is no room for murderers among us.'"
+"As the judge walks away you see a look of disgust and horror on his face. When you scan the crowd you see the same expression mirrored on everyone's face. You know you will get no help from them."
+
+Trial ends when the number of filled rows in the Table of Trial Events is 0.
+
+After reading a command during Trial:
+    say "You desperately try to catch the eyes of your fellow dragons but everyone avoids your gaze. There is nothing you can do but wait this out.";
+    Before doing something other than waiting or listening during Trial:
+        stop the action;
+.
+
+Section - Mystery
+
+Mystery is a scene. Mystery begins when Trial ends.
+
+When the Mystery begins:
+    now the player is in the Marketplace;
+    now the printed name of the Neighbor’s Room is “Claire’s Room”;
+    now the description of Neighbor's Room is "Unlike your stretch of aisle, this 'home' seems to be more personalized.";
+    now the shoelace ribbon is in the Neighbor’s Room;
+    now the tattered book is in the Neighbor’s Room;
+    say "Better head east to the residential area. If you're going to solve your crime you might as well start at the crime scene.".
